@@ -1,6 +1,6 @@
 {
   "name": "react-media-player",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "React media player.",
   "main": "lib/react-media-player.js",
   "files": ["dist", "lib"],
@@ -12,7 +12,7 @@
       "webpack-dev-server --inline --hot --progress --colors --host 0.0.0.0 --devtool eval",
     "postbuild":
       "NODE_ENV=production TARGET=minify webpack --config webpack.prod.config.js",
-    "prebuild": "rm -rf dist && mkdir dist",
+    "prebuild": "echo test",
     "prepublish": "npm run build",
     "deploy":
       "NODE_ENV=production TARGET=minify webpack && git-directory-deploy --directory example --branch gh-pages"
@@ -38,8 +38,8 @@
   },
   "homepage": "https://github.com/souporserious/react-media-player",
   "peerDependencies": {
-    "react": "0.14.x || ^15.0.0",
-    "react-dom": "0.14.x || ^15.0.0"
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
@@ -56,16 +56,16 @@
     "node-libs-browser": "^1.0.0",
     "node-sass": "^3.2.0",
     "postcss-loader": "^0.13.0",
-    "react": "15.3.2",
-    "react-dom": "15.3.2",
-    "react-motion": "^0.4.2",
-    "react-motion-ui-pack": "^0.10.2",
+    "react": "16.3.1",
+    "react-dom": "16.3.1",
+    "react-motion": "^0.5.2",
+    "react-motion-ui-pack": "^0.10.3",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.9.0"
   },
   "dependencies": {
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.6.1"
   }
 }
